@@ -1,3 +1,5 @@
+const { moveUpKey, moveRightKey, moveLeftKey, moveDownKey } = require("./constants");
+
 // setup interface to handle user input from stdin
 const setupInput = (conn) => {
   connection = conn;
@@ -16,19 +18,19 @@ const handleUserInput = function (key) {
     process.exit();
   }
 
-  if (key === 'w') {
+  if (key === moveUpKey) {
     connection.write("Move: up")
   }
 
-  if (key === 'a') {
+  if (key === moveLeftKey) {
     connection.write("Move: left")
   }
 
-  if (key === 's') {
+  if (key === moveDownKey) {
     connection.write("Move: down")
   }
 
-  if (key === 'd') {
+  if (key === moveRightKey) {
     connection.write("Move: right")
   }
 
