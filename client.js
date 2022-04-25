@@ -14,9 +14,12 @@ const connect = function () {
     console.log('Successful connection made!')
    });
 
+  conn.write('Name: DOG')
+
   conn.on('data', () => {
     console.log('you ded cuz you idled')
    });
+
 
   return conn;
 };
