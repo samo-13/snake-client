@@ -16,6 +16,8 @@ const connect = function () {
 
   conn.write('Name: DOG')
 
+  conn.write('Move: up')
+
   conn.on('data', () => {
     console.log('you ded cuz you idled')
    });
