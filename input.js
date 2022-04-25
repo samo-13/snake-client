@@ -32,6 +32,15 @@ const handleUserInput = function (key) {
     connection.write("Move: right")
   }
 
+  // canned responses
+  if (key === 'l') {
+    connection.write("Say: Good game!")
+  }
+
+  if (key === 'o') {
+    connection.write("Say: Ooops!")
+  }
+  
 };
 
 module.exports = { setupInput };
