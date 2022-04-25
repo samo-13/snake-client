@@ -12,35 +12,37 @@ const setupInput = (conn) => {
 };
 
 
-const handleUserInput = function (key) {
+const handleUserInput = function(key) {
   // \u0003 maps to ctrl+c input
   if (key === '\u0003') {
     process.exit();
   }
 
+
+  // movement key mapping
   if (key === moveUpKey) {
-    connection.write("Move: up")
+    connection.write("Move: up");
   }
 
   if (key === moveLeftKey) {
-    connection.write("Move: left")
+    connection.write("Move: left");
   }
 
   if (key === moveDownKey) {
-    connection.write("Move: down")
+    connection.write("Move: down");
   }
 
   if (key === moveRightKey) {
-    connection.write("Move: right")
+    connection.write("Move: right");
   }
 
   // canned responses
   if (key === 'l') {
-    connection.write("Say: Good game!")
+    connection.write("Say: Good game!");
   }
 
   if (key === 'o') {
-    connection.write("Say: Ooops!")
+    connection.write("Say: Ooops!");
   }
   
 };
