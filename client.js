@@ -16,17 +16,17 @@ const connect = function () {
 
   conn.write('Name: DOG')
 
-  conn.write('Move: up')
+  // conn.write('Move: up')
 
-  setTimeout (() => {
-    conn.write('Move: up');
-  }, 50);
-  setTimeout (() => {
-    conn.write('Move: up');
-  }, 150);
-  setTimeout (() => {
-    conn.write('Move: up');
-  }, 200);
+  // setTimeout (() => {
+  //   conn.write('Move: up');
+  // }, 50);
+  // setTimeout (() => {
+  //   conn.write('Move: up');
+  // }, 150);
+  // setTimeout (() => {
+  //   conn.write('Move: up');
+  // }, 200);
 
   conn.on('data', () => {
     console.log('you ded cuz you idled')
