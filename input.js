@@ -18,7 +18,6 @@ const handleUserInput = function(key) {
     process.exit();
   }
 
-
   // movement key mapping
   if (key === moveUpKey) {
     connection.write("Move: up");
